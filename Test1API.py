@@ -28,5 +28,11 @@ def checkServiceForWord(url, keyword):
 # Test 1
 name = 'Test 1'
 url = 'http://localhost:5000/getProducts'
-result = checkServiceForWord(url, 'jam', 'cheese')
+result = checkServiceForWord(url, 'jam')
+saveResult(name, url, result)
+
+# Test 1.1
+name = 'Test 1.1'
+url = 'http://localhost:5000/getProducts'
+result = checkServiceForWord(url, 'cheese')
 saveResult(name, url, result)
